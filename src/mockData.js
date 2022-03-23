@@ -3,7 +3,8 @@ import peli from "./images/pelic.jpg";
 import pi from "./images/piHenry.jpg"
 import resto from "./images/rapiResto.jpg"
 import ClonDeGoogle from "./images/clonGoogle.jpg";
-import  breaking from "./images/breakingbad.jpg"
+import  breaking from "./images/breakingbad.jpg";
+import useStory from "./images/useStory.jpg"
 
 
 const mockData = [
@@ -36,12 +37,20 @@ const mockData = [
          image: ClonDeGoogle,
          link :"https://www.youtube.com/watch?v=IOtQXqk0RGs&list=TLPQMTUwMzIwMjIPLCLf6NQd3Q&index=1",
          
+         
      },
 
      {
          title: "Breaking bad",
          image: breaking,
          link: "https://www.youtube.com/watch?v=GgtfuaELLuU"
+     }, 
+
+     {
+      title: "useStory",
+      image:useStory,
+      link: "https://www.youtube.com/watch?v=Eo3Kb4zKSu4"
+
      }
 
 
