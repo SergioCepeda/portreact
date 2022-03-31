@@ -4,7 +4,8 @@ import pi from "./images/piHenry.jpg"
 import resto from "./images/rapiResto.jpg"
 import ClonDeGoogle from "./images/clonGoogle.jpg";
 import  breaking from "./images/breakingbad.jpg";
-import useStory from "./images/useStory.jpg"
+import useStory from "./images/useStory.jpg";
+import spoty from "./images/spoty.jpg";
 
 
 const mockData = [
@@ -50,6 +51,12 @@ const mockData = [
       title: "useStory",
       image:useStory,
       link: "https://www.youtube.com/watch?v=Eo3Kb4zKSu4"
+
+     },
+     {
+         title: "Spoty",
+         image:spoty,
+         link:"https://www.youtube.com/watch?v=_lB7CwTYQtM"
 
      }
 
