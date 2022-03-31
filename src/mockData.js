@@ -54,7 +54,7 @@ const mockData = [
 
      },
      {
-         title: "Spoty",
+         title: "SpotifyClon",
          image:spoty,
          link:"https://www.youtube.com/watch?v=_lB7CwTYQtM"
 
