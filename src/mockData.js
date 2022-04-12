@@ -6,6 +6,7 @@ import ClonDeGoogle from "./images/clonGoogle.jpg";
 import  breaking from "./images/breakingbad.jpg";
 import useStory from "./images/useStory.jpg";
 import spoty from "./images/spoty.jpg";
+import eco from "./images/e-co.jpg";
 
 
 const mockData = [
@@ -58,6 +59,11 @@ const mockData = [
          image:spoty,
          link:"https://www.youtube.com/watch?v=_lB7CwTYQtM"
 
+     },
+     {
+         title: "E-commerce Sergio",
+         image:eco,
+         link: "https://www.youtube.com/watch?v=xaxMkaQqBm8"
      }
 
 
