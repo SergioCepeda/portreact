@@ -33,11 +33,10 @@ const About = ({title, dark, id}) => {
                />
 
             <Typography variant="h7" color= "textSecondary"  textStyle={{fontSize:"0.1rem"}}>
-              Soy egresado del bootcamp de  soyHenry, soy una persona apasionada por lo que hago. Tengo experiencia academica por el momento, participe
-              de un proyecto grupal con 8 desarrollaores con metodologia scrum. Tambien eh realizado proyectos individuales que expongo en este portfolio.
-              Me destaco por ser una persona empatica, sociable y respetuosa. Participe de un taller del gobierno de Buenos Aires sobre habilidades blandas, Tambien fui (TA)teaching Assintent
-              maneje un grupo de 21 estudiantes de programacion para integrarlos, guiarlos con el codigo y fomentar el pair programing.
-              Me encuentro todo el tiempo en constante aprendizaje, buscando ahora mi primera experiencia en el mundo IT.
+              Soy egresado del bootcamp de  soyHenry y estudiante de ingeniera en la computación, soy una persona apasionada por lo que hago. Tengo experiencia con stack MERN Y PERN,cuento con
+              experiencia como freelance y desarrollando dos proyectos. Uno desde el backend con stack PERN y el otro tambien desde el backend con stack MERN. Mi experiencia desde el frontend ah sido con
+              react, redux, react-redux, material-ui. Soy una persona que se adapta para lograr conseguir los objetivos, cuento con experiencia en metologias agiles como scrum, manejo de jira y trello.
+              
  
             </Typography>
        
