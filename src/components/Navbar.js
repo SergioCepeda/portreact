@@ -8,6 +8,12 @@ import BuildIcon from '@material-ui/icons/Build';
 import ContactMailIcon from '@material-ui/icons/ContactMail';
 import MenuIcon from '@material-ui/icons/Menu';
 import CancelIcon from '@material-ui/icons/Cancel';
+import AccessibilityNewIcon from '@material-ui/icons/AccessibilityNew';
+import BakeryDiningIcon from '@mui/icons-material/BakeryDining'
+import CloseFullscreenIcon from '@mui/icons-material/CloseFullscreen';
+import MobileScreenShareIcon from '@mui/icons-material/MobileScreenShare';
+import BalanceIcon from '@mui/icons-material/Balance';
+import AssuredWorkloadIcon from '@mui/icons-material/AssuredWorkload';
 
 
 
@@ -31,6 +37,42 @@ const Navbar = () => {
       id:"mywork",
       text: "Mi trabajo",
       icon: <BuildIcon fontSize="large"  className={classes.work}/>
+    },
+    {
+    
+      id: "ta" ,
+      text: "TA",
+      icon: <AccessibilityNewIcon fontSize="large" className={classes.ta}/>
+      
+
+    },
+    {
+     id: "nivel",
+     text: "Level",
+     icon:<BakeryDiningIcon fontSize="large" className={classes.nivel}/>
+
+    },
+    {
+      id: "fullstack",
+      text: "FullStack",
+      icon: <CloseFullscreenIcon  fontSize='large' className={classes.stack} />
+    },
+    {
+      id: "mobile",
+      text: "Mobile",
+      icon: <MobileScreenShareIcon fontSize='large' className={classes.mobile} />
+
+    },
+    {
+      id: "habilidades",
+      text: "Habilidades",
+      icon: <BalanceIcon fontSize='large' className={classes.ability} /> 
+
+    },
+    {
+      id: "experiencia",
+      text: "Experiencia",
+      icon: <AssuredWorkloadIcon fontSize='large' className={classes.experiencia} />
     },
     {
       id:"contact",
@@ -128,18 +170,36 @@ objectFit:"contain",
   cursor:"pointer"
 }
 },
+ability: {
+  color: "#CC0099",
+},
+mobile:{
+  color:"#9999FF"
+},
 contacto:{
   color:"#00ffff"
 },
 yo:{
   color:"#00ff00"
 },
+stack:{
+  color:"#0066ff"
+},
+experiencia:{
+  color:"#99CCFF"
+},
+nivel:{
+  color:"#006666"
+},
+ta:{
+  color:"tomato"
+},
 
 work:{
-  color:"#ffA500"
+  color:"#000fff"
 },
 light:{
-  color:"#ffcc00",
+  color:"#fff000",
 },
 menu:{
   [theme.breakpoints.down("sm")]:{

@@ -2,6 +2,7 @@ import React from 'react'
  import { useForm } from '../hooks/useForm';
 import Loader from './Loader'
 import Messaje from './Messaje';
+import Footer from './Footer';
 
 import { makeStyles ,Typography, Paper} from '@material-ui/core';
 
@@ -69,14 +70,18 @@ const Contact = ({title, dark, id}) => {
 
 
   return (
-    <div className={`${Classes.section}${dark && Classes.sectiondark}`} >  
+   <>
+    <div class="col-12 my-5">  
   
-       <div className={Classes.sectioncontent} id={id} >
-       <Typography variant="h5">{title}</Typography>
-     <Paper className={Classes.root}>
-     <div className={Classes.title}>
-     <Typography  variant="h5">Enviame un mensaje</Typography> 
-     <form className={Classes.form}  onSubmit={handleSubmit}>
+       <div class="mx-auto" style={{width: "220px", top:"50px"}} id={id} >
+       <h1>{title}</h1>
+    
+     <h5>Enviame un mensaje</h5> 
+     <form className='form'  onSubmit={handleSubmit}>
+   
+            <label  class="col-lg-1 control-label "></label>
+              <div class="col-auto"></div>
+
     <input 
      type="text" 
      name="name" 
@@ -84,10 +89,11 @@ const Contact = ({title, dark, id}) => {
      onBlur={handleBlur} 
       onChange={handleChange} 
       value={form.name} 
-      className={"form-control"}
+      class="form-control"
       required
 
      />
+    
      {errors.name && <p style={styles}>{errors.name}</p>}
      <input 
      type="email" 
@@ -120,25 +126,25 @@ const Contact = ({title, dark, id}) => {
      
 </textarea>
  {errors.comments && <p style={styles}>{errors.comments}</p>}
- <div class="form-group row">
-    <div class="col-sm-10"></div>
- <input className={Classes.buton}  color="secondary" variant="contained"   type="submit"  class="btn btn-primary"  value="Enviar"/>
+ <div class="row g-3 align-items-center">
+ <label  class="col-lg-1 control-label " ></label>
+    <div class="col-auto">
+ <button type="button"  ><input style={{borderRadius:"0.5px"}} class="btn btn-primary" type="submit"/></button>
  </div> 
+ </div>   
+ 
          </form>
- </div>
-                </Paper>        
          {loading && <Loader/>}
          {response && <Messaje msg="Tu mensaje fue enviado con exito." bgColor="#fff" />}
          
                      
                     
-         <p className={Classes.enlace}>
-                  <h3> Visita mi linkedin en : <a href="https://www.linkedin.com/in/sergio-cepeda-dev/" target="_BLANK" rel="noreferrer">LinkedIn</a> y mi github <a href="https://github.com/SergioCepeda" target="_BLANK" rel="noreferrer">GitHub</a>! Gracias por tu visita. </h3>
-                </p>
 
         </div>
        
-        </div>
+       </div>
+        <Footer/>
+       </>
      
   )
 }
@@ -157,13 +163,28 @@ const useStyles = makeStyles((theme) => ({
    
   },
 
- sectiondark:{
-   background: "#333",
-   color:"#fff",
+  form:{
+    background: "rgba(12, 143, 231)", 
 
-
+    color: "rgb(255, 248, 248)",
+    border: "1px solid #f1f1f1",
+    borderRadius: "1rem",
+    position: "absolute",  
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    Zindex: "2",
+    width: "60%",
+    padding: "20px"
    
- },
+},
+
+  sectiondark:{
+    background: "#333",
+    color: "#fff",
+  },
+   
+
  root:{
    height:"600px",
 
@@ -206,6 +227,7 @@ const useStyles = makeStyles((theme) => ({
 
 
  },
+
  
  form:{
    display:"flex",

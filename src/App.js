@@ -4,6 +4,12 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import MyWork from "./components/MyWork";
 import Contact from "./components/Contact";
+import TA from "./components/TA";
+import Level from "./components/Level.js";
+import FullStack from "./components/FullStack";
+import Mobile from "./components/Mobile";
+import  Habilidades from "./components/Habilidades";
+import Experiencia  from "./components/Experiencia";
 
 
 
@@ -29,7 +35,12 @@ function App() {
      <About  title="Sobre mi" id= "about"   dark={true}/>
      <Skills  title="Mis habilidades"  id= "skill"  dark={false} />
      <MyWork  title="Mi trabajo" id= "mywork"   dark={true}/>   
-  
+      <TA  title="TA" id= "ta"   dark={false}/>
+      <Level title="Level" id="nivel" dark={true}/>
+      <FullStack title="FullStack" id="fullstack" dark={false} />
+      <Mobile title="Mobile" id="mobile" dark={true}/>
+    <Habilidades  title="Habilidades" id="habilidades" dark={false}/>
+    <Experiencia  title="Experiencia" id="experiencia" dark={true}/>
     <Contact  title="Contactame" id= "contact"   dark={false}/> 
     </div>
      </MuiThemeProvider>

@@ -13,6 +13,9 @@ import { TimelineItem, TimelineOppositeContent } from '@material-ui/lab';
 import { TimelineSeparator } from '@material-ui/lab';
 import { makeStyles, Paper, Typography } from '@material-ui/core';
 import StarRating from './StarRating';
+import mongo from "../images/logoMongo.jpg";
+import Tailwind from '../images/Tailwind.jpg';
+import Vue from "../images/vue.png";
 
 
 
@@ -47,6 +50,13 @@ const Technologies = () => {
         stars: 5,
       },
       {
+        year: "2021",
+        src: Tailwind,
+        title: "Tailwind CSS",
+        stars: 4,
+
+      },
+      {
           year:"2022",
           src: redux,
           title: "Redux",
@@ -57,6 +67,12 @@ const Technologies = () => {
           src: reactRedux,
           title: "react-redux",
           stars:4,
+      },
+      {
+          year:"2022",
+          src: Vue,
+          title: "Vue.js",
+          stars:3,
       },
       {
         year: "2022",  
@@ -76,6 +92,14 @@ const Technologies = () => {
           title: "PostgreSQL",
           stars:4,
       },
+
+      {
+        year: "2022",
+        src: mongo,
+        title: "MongoDB",
+        stars:4,
+
+      }
    
 
 
