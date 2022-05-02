@@ -7,6 +7,7 @@ import  breaking from "./images/breakingbad.jpg";
 import useStory from "./images/useStory.jpg";
 import spoty from "./images/spoty.jpg";
 import eco from "./images/e-co.jpg";
+import Bank from "./images/BanK.jpg";
 
 
 const mockData = [
@@ -64,6 +65,12 @@ const mockData = [
          title: "E-commerce Sergio",
          image:eco,
          link: "https://www.youtube.com/watch?v=xaxMkaQqBm8"
+     },
+     {
+      title: "Aplicacion bancaria PWA",
+        image:Bank, 
+        link:"https://www.youtube.com/watch?v=RXYqR5k4AeY&t=1s"
+
      }
 
 
