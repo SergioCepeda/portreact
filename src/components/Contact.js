@@ -4,7 +4,7 @@ import Loader from './Loader'
 import Messaje from './Messaje';
 import Footer from './Footer';
 
-import { makeStyles ,Typography, Paper} from '@material-ui/core';
+import { makeStyles } from '@material-ui/core';
 
  const initialForm={
    name:"",  
@@ -229,19 +229,8 @@ const useStyles = makeStyles((theme) => ({
  },
 
  
- form:{
-   display:"flex",
-   flexDirection:"Column",
-   marginTop: theme.spacing(3),
  
-   "& input ":{
-     marginBottom: theme.spacing(1),
-     marginTop: theme.spacing(2),
-     height:"20px",
-     width:"250px",
-     
-   },
- },
+ 
  text:{
    marginTop: theme.spacing(6),
    height:"100px",
