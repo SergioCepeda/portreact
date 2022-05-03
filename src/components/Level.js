@@ -23,14 +23,7 @@ const Level = ({title, dark, id}) => {
                 typeSpeed={100}
 
                />
-               <TypeWriterEffect
-                text= "Engineer Software react senior"
-                textStyle={{fontSize:"1.5rem", fontWeight: "900px"}}
-                startDelay={3500}
-                cursorColor= "#296cbc"
-                typeSpeed={50}
-
-               />
+             
 
             <Typography variant="h7" color= "textSecondary"  textStyle={{fontSize:"0.1rem"}}>
               Mi nivel de programacion con react.js en frontend es de senior, mi experiencia rindiendo
