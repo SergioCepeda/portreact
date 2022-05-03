@@ -23,15 +23,7 @@ const Experiencia = ({title, dark, id}) => {
                 typeSpeed={100}
 
                />
-               <TypeWriterEffect
-                text= "Certificado de Experiencia, dejando de ser junior a semi-senior"
-                textStyle={{fontSize:"1.5rem", fontWeight: "900px"}}
-                startDelay={3500}
-                cursorColor= "#296cbc"
-                typeSpeed={50}
-
-               />
-
+         
             <Typography variant="h7" color= "textSecondary"  textStyle={{fontSize:"0.1rem"}}>
             Se desarrolla un proyecto en equipo en 4 semanas, cumpliendo requisitos de aprobación
             , asistiendo a reuniones con sus Team Leaders quienes evaluarán el desempeño del equipo.
