@@ -23,14 +23,7 @@ const Habilidades = ({title, dark, id}) => {
                 typeSpeed={100}
 
                />
-               <TypeWriterEffect
-                text= "habilidades blandas en entornos digitales"
-                textStyle={{fontSize:"1.5rem", fontWeight: "900px"}}
-                startDelay={3500}
-                cursorColor= "#296cbc"
-                typeSpeed={50}
-
-               />
+          
 
             <Typography variant="h7" color= "textSecondary"  textStyle={{fontSize:"0.1rem"}}>
             Reconocer la importancia de las habilidades blandas en entornos digitales en el presente
