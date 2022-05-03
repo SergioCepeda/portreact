@@ -16,7 +16,7 @@ const Level = ({title, dark, id}) => {
             <CardMedia  image={senior} className={Classes.media} title="picture"/>
             <CardContent className={Classes.CardContent}content>
               <TypeWriterEffect
-                text= "Engineer software Senior react.js"
+                text= "Engineer software Senior react.js checkpoint"
                 textStyle={{fontSize:"1.5rem", fontWeight: "1000px", color: "#51d1f6"}}
                 startDelay={100}
                 cursorColor= "black"
