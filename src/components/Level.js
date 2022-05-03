@@ -34,9 +34,9 @@ const Level = ({title, dark, id}) => {
 
             <Typography variant="h7" color= "textSecondary"  textStyle={{fontSize:"0.1rem"}}>
               Mi nivel de programacion con react.js en frontend es de senior, mi experiencia rindiendo
-              checkpoints para un trabajo a nivel mundial arrojo un resultado de un 80% de acierto. El 
-              20% restante se me desconto por estar en otros procesos de seleccion, lo cual es inentendible,
-              pero el examen da fe de mi nivel desde el frontend.
+              checkpoints para un trabajo a nivel mundial arrojo un resultado de un 80% de acierto.
+              
+             
  
             </Typography>
        
