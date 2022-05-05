@@ -14,6 +14,8 @@ import CloseFullscreenIcon from '@mui/icons-material/CloseFullscreen';
 import MobileScreenShareIcon from '@mui/icons-material/MobileScreenShare';
 import BalanceIcon from '@mui/icons-material/Balance';
 import AssuredWorkloadIcon from '@mui/icons-material/AssuredWorkload';
+import { useTranslation} from "react-i18next";
+
 
 
 
@@ -21,62 +23,64 @@ import AssuredWorkloadIcon from '@mui/icons-material/AssuredWorkload';
 const Navbar = () => {
   const classes = useStyles();
   const [open, setOpen] = useState(false);
+  const [t, i18n] = useTranslation('global');
+  
   const link = [
     {
-      id: "about",
-      text:"Sobre mi",
+      id:   "about",
+      title: t("About.name"),
       icon: <PermIdentityIcon fontSize="large"  className={classes.yo}/>
     },
     {
       id:"skill",
-      text: "Habilidades",
+      title:t("About.skill"),
       icon: <EmojiObjectsIcon fontSize="large" className={classes.light}/>
     },
   
     {
       id:"mywork",
-      text: "Mi trabajo",
+      title:t("About.work") ,
       icon: <BuildIcon fontSize="large"  className={classes.work}/>
     },
     {
     
       id: "ta" ,
-      text: "TA",
+      title: t("About.ta"),
       icon: <AccessibilityNewIcon fontSize="large" className={classes.ta}/>
       
 
     },
     {
      id: "nivel",
-     text: "Level",
+     title: t("About.level") ,
      icon:<BakeryDiningIcon fontSize="large" className={classes.nivel}/>
 
     },
     {
       id: "fullstack",
-      text: "FullStack",
+      title: t("About.stack"),
       icon: <CloseFullscreenIcon  fontSize='large' className={classes.stack} />
     },
     {
       id: "mobile",
-      text: "Mobile",
+      title: t("About.mobile"),
       icon: <MobileScreenShareIcon fontSize='large' className={classes.mobile} />
 
     },
     {
       id: "habilidades",
-      text: "Habilidades",
+      title: t("About.Habilidades"),
       icon: <BalanceIcon fontSize='large' className={classes.ability} /> 
 
     },
     {
       id: "experiencia",
-      text: "Experiencia",
+      title: t("About.experiencia"),
       icon: <AssuredWorkloadIcon fontSize='large' className={classes.experiencia} />
     },
     {
       id:"contact",
-      text: "Contactame",
+      title: t("About.contactame"),
       icon: <ContactMailIcon  fontSize="large"  className={classes.contacto}/>
     }
   ]
@@ -97,7 +101,7 @@ const Navbar = () => {
         />
        <List className ={classes.menu}>
        { 
-        link.map(({ id, text }, index) => (
+        link.map(({ id, title }, index) => (
               <Link key={index} 
                to={id} 
                spy={true} 
@@ -105,7 +109,7 @@ const Navbar = () => {
                 smooth={ true }
                  duration={ 500 }
                   offset={-70} >
-                  {text}
+                  {title}
                   </Link>
             ))
           }
@@ -127,7 +131,7 @@ const Navbar = () => {
       </IconButton>
      <Divider />
      { 
-        link.map(({ id, text, icon }, index) => (
+        link.map(({ id, title, icon }, index) => (
               <Link key={index} 
               className={classes.sidebar}
                to={id} 
@@ -141,7 +145,7 @@ const Navbar = () => {
                     <ListItemIcon>
                      {icon}
                     </ListItemIcon>
-                    </span>{text}
+                    </span>{title}
                   </ListItem>
                   </Link>
             ))
@@ -152,7 +156,8 @@ const Navbar = () => {
 }
 const useStyles = makeStyles((theme) => ({
   root:{
-    background: "#fafafa",
+    background: "#fff",
+    color:"#51d1f6",
     top:0,
     left:0,
     right:0,

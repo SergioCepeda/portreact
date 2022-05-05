@@ -1,4 +1,4 @@
-import { createTheme, makeStyles, MuiThemeProvider} from "@material-ui/core";
+
 import Navbar from './components/Navbar'
 import About from "./components/About";
 import Skills from "./components/Skills";
@@ -10,47 +10,41 @@ import FullStack from "./components/FullStack";
 import Mobile from "./components/Mobile";
 import  Habilidades from "./components/Habilidades";
 import Experiencia  from "./components/Experiencia";
+import { useTranslation} from "react-i18next";
 
 
 
-import { red } from "@material-ui/core/colors";
 
-const theme = createTheme({
-  palette:{
-    primary: {main : red[500]},
-    secondary:{main:"#333"}
-  
-  },
-});
+
+
+
 
 
 function App() {
   
-  const Classes = useStyles();
-
+  
+  const [t, i18n] = useTranslation('global');
   return (
-    <MuiThemeProvider theme={theme}>
-    <div className={Classes.root}>
+  
+    <div >
      <Navbar/>
-     <About  title="Sobre mi" id= "about"   dark={true}/>
-     <Skills  title="Mis habilidades"  id= "skill"  dark={false} />
-     <MyWork  title="Mi trabajo" id= "mywork"   dark={true}/>   
-      <TA  title="TA" id= "ta"   dark={false}/>
-      <Level title="Level" id="nivel" dark={true}/>
-      <FullStack title="FullStack" id="fullstack" dark={false} />
-      <Mobile title="Mobile" id="mobile" dark={true}/>
-    <Habilidades  title="Habilidades" id="habilidades" dark={false}/>
-    <Experiencia  title="Experiencia" id="experiencia" dark={true}/>
-    <Contact  title="Contactame" id= "contact"   dark={false}/> 
+      
+     <About  title={t("About.name")} id= "about"   dark={true}/>
+     <Skills  title={t("About.skill")}  id= "skill"  dark={false} />
+     <MyWork  title={t("About.work")} id= "mywork"   dark={true}/>   
+      <TA  title={t("About.ta")} id= "ta"   dark={false}/>
+      <Level title={t("About.level")} id="nivel" dark={true}/>
+      <FullStack title={t("About.stack")} id="fullstack" dark={false} />
+      <Mobile title={t("About.mobile")} id="mobile" dark={true}/>
+    <Habilidades  title={t("About.habilidades")} id="habilidades" dark={false}/>
+    <Experiencia  title={t("About.experiencia")} id="experiencia" dark={true}/>
+    <Contact  title={t("About.contactame")} id= "contact"   dark={false}/> 
+      
     </div>
-     </MuiThemeProvider>
+   
   );
 }
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-   
-  }
-}))
+
 
 export default App;

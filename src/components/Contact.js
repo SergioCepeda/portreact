@@ -3,6 +3,7 @@ import React from 'react'
 import Loader from './Loader'
 import Messaje from './Messaje';
 import Footer from './Footer';
+import { useTranslation} from "react-i18next";
 
 import { makeStyles } from '@material-ui/core';
 
@@ -52,7 +53,7 @@ let styles ={
  
 
 const Contact = ({title, dark, id}) => {
-
+  const [t, i18n] = useTranslation('global');
   const Classes = useStyles();
 
 
@@ -76,7 +77,7 @@ const Contact = ({title, dark, id}) => {
        <div class="mx-auto" style={{width: "220px", top:"50px"}} id={id} >
        <h1>{title}</h1>
     
-     <h5>Enviame un mensaje</h5> 
+     <h5>{t("About.msg")}</h5> 
      <form className='form'  onSubmit={handleSubmit}>
    
             <label  class="col-lg-1 control-label "></label>
@@ -85,7 +86,7 @@ const Contact = ({title, dark, id}) => {
     <input 
      type="text" 
      name="name" 
-     placeholder='Escribe tu nombre' 
+     placeholder={t("About.place")}
      onBlur={handleBlur} 
       onChange={handleChange} 
       value={form.name} 
@@ -98,7 +99,7 @@ const Contact = ({title, dark, id}) => {
      <input 
      type="email" 
      name="email" 
-     placeholder='Escribe tu email' 
+     placeholder={t("About.holder")}
      onBlur={handleBlur} 
       onChange={handleChange} 
       value={form.email} 
@@ -111,7 +112,7 @@ const Contact = ({title, dark, id}) => {
  <input 
      type="text" 
      name="subject" 
-     placeholder='Asunto a tratar' 
+     placeholder={t("About.place2")}
      onBlur={handleBlur} 
       onChange={handleChange} 
       value={form.subject} 
@@ -121,7 +122,7 @@ const Contact = ({title, dark, id}) => {
 
      />
      {errors.subject && <p style={styles}>{errors.subject}</p>}
-     <textarea  className={Classes.text}   name="comments"  cols="50" rows="5" placeholder="Escribe tu mensaje"  onBlur={handleBlur}  onChange={handleChange} value={form.comments} required   >
+     <textarea  className={Classes.text}   name="comments"  cols="50" rows="5" placeholder={t("About.holder2")} onBlur={handleBlur}  onChange={handleChange} value={form.comments} required   >
  
      
 </textarea>
@@ -135,7 +136,7 @@ const Contact = ({title, dark, id}) => {
  
          </form>
          {loading && <Loader/>}
-         {response && <Messaje msg="Tu mensaje fue enviado con exito." bgColor="#fff" />}
+         {response && <Messaje msg={t("About.mssg")} bgColor="#fff" />}
          
                      
                     

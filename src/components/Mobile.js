@@ -1,41 +1,26 @@
 import React from 'react'
-import {  Card,  CardContent, CardMedia, makeStyles, Typography } from "@material-ui/core";
+import {  Card,  CardContent, CardMedia, makeStyles} from "@material-ui/core";
+import { useTranslation} from "react-i18next";
 
-import TypeWriterEffect from "react-typewriter-effect"
 import mobile from "../images/mobile.jpg"
 
  
 const Mobile = ({title, dark, id}) => {
   const Classes = useStyles();
+  const [t, i18n] = useTranslation('global');
   return (
    
     <div className={`${Classes.section} ${dark && Classes.sectiondark}`}>
        <div className={ Classes.sectioncontext} id={id}>
-         <Typography variant='h5'>{title}</Typography>
+         <h5>{title}</h5>
          <Card className={Classes.card}>
             <CardMedia  image={mobile} className={Classes.media} title="picture"/>
             <CardContent className={Classes.CardContent}content>
-              <TypeWriterEffect
-                text= "Certificado desarrollador de aplicaciones mobiles"
-                textStyle={{fontSize:"1.5rem", fontWeight: "1000px", color: "#51d1f6"}}
-                startDelay={100}
-                cursorColor= "black"
-                typeSpeed={100}
+            <h5>{t("About.celu")}</h5>
+        
+             
 
-               />
-               <TypeWriterEffect
-                text= "mobile developer"
-                textStyle={{fontSize:"1.5rem", fontWeight: "900px"}}
-                startDelay={3500}
-                cursorColor= "#296cbc"
-                typeSpeed={50}
-
-               />
-
-            <Typography variant="h7" color= "textSecondary"  textStyle={{fontSize:"0.1rem"}}>
-               Estudie el desarrollo de aplicaciones mobile, tanto el proceso, el diseño y la arquitectura.
-            </Typography>
-       
+         <h7>{t("About.cel")}</h7>
 
 
 

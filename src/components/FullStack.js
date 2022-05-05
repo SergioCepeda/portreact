@@ -1,43 +1,26 @@
 import React from 'react'
 import {  Card,  CardContent, CardMedia, makeStyles, Typography } from "@material-ui/core";
+import { useTranslation} from "react-i18next";
 
-import TypeWriterEffect from "react-typewriter-effect"
 import stack from "../images/certificadoFullStack.jpg"
 
  
 const FullStack = ({title, dark, id}) => {
   const Classes = useStyles();
+  const [t, i18n] = useTranslation('global');
   return (
    
     <div className={`${Classes.section} ${dark && Classes.sectiondark}`}>
        <div className={ Classes.sectioncontext} id={id}>
-         <Typography variant='h5'>{title}</Typography>
+        <h5>{t("About.stack")}</h5>
          <Card className={Classes.card}>
             <CardMedia  image={stack} className={Classes.media} title="picture"/>
             <CardContent className={Classes.CardContent}content>
-              <TypeWriterEffect
-                text= "Certificado FullStack developer web"
-                textStyle={{fontSize:"1.5rem", fontWeight: "1000px", color: "#51d1f6"}}
-                startDelay={100}
-                cursorColor= "black"
-                typeSpeed={100}
+          <h5>{t("About.diplo")}</h5>
+               
 
-               />
-               <TypeWriterEffect
-                text= "fullstack developer web"
-                textStyle={{fontSize:"1.5rem", fontWeight: "900px"}}
-                startDelay={3500}
-                cursorColor= "#296cbc"
-                typeSpeed={50}
-
-               />
-
-            <Typography variant="h7" color= "textSecondary"  textStyle={{fontSize:"0.1rem"}}>
-               Con mas de 800 horas de codeo, pair programming y realizacion de proyectos tanto individuales como
-               grupales en el frontend, backend y fullstack.
-
-            </Typography>
-       
+         <h7>{t("About.henry")}</h7>
+        
 
 
 

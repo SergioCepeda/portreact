@@ -1,12 +1,13 @@
 import React from 'react'
 import {  Card,  CardContent, CardMedia, makeStyles, Typography } from "@material-ui/core";
+import { useTranslation} from "react-i18next";
 
-import TypeWriterEffect from "react-typewriter-effect"
 import senior from "../images/seniorReact.png"
 
  
 const Level = ({title, dark, id}) => {
   const Classes = useStyles();
+  const [t, i18n] = useTranslation('global');
   return (
    
     <div className={`${Classes.section} ${dark && Classes.sectiondark}`}>
@@ -15,23 +16,10 @@ const Level = ({title, dark, id}) => {
          <Card className={Classes.card}>
             <CardMedia  image={senior} className={Classes.media} title="picture"/>
             <CardContent className={Classes.CardContent}content>
-              <TypeWriterEffect
-                text= "Engineer software Senior react.js checkpoint"
-                textStyle={{fontSize:"1.5rem", fontWeight: "1000px", color: "#51d1f6"}}
-                startDelay={100}
-                cursorColor= "black"
-                typeSpeed={100}
-
-               />
+              <h3>{t("About.level")}</h3>
              
 
-            <Typography variant="h7" color= "textSecondary"  textStyle={{fontSize:"0.1rem"}}>
-              Mi nivel de programacion con react.js en frontend es de senior, mi experiencia rindiendo
-              checkpoints para un trabajo a nivel mundial arrojo un resultado de un 80% de acierto.
-              
-             
- 
-            </Typography>
+            <h7>{t("About.ni")}</h7>
        
 
 

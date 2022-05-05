@@ -1,0 +1,39 @@
+{
+    "About":{
+        "name":"Sobre mi",
+        "skill":"Habilidades",
+        "work":"Mi Trabajo",
+        "ta":"TA",
+        "level":"Nivel",
+        "stack":"FullStack", 
+        "mobile":"Mobile",
+        "Habilidades":"Habilidades Blandas", 
+        "experiencia":"Experiencia",
+        "Text": "Hola, soy Sergio",
+        "title":"Soy fullstack developer",
+        "contactame":"Contactame",
+        "p":"Soy egresado del bootcamp de Henry y estudiante de ingeniera en la computación, soy una persona apasionada por lo que hago. Tengo experiencia con stack MERN Y PERN,cuento con experiencia como freelance de mas de dos años y medio tambien desarrollando proyectos en equipo, como tambien de forma individual tratando directamente con el cliente. Fui TA de un grupo de 21 profesionales, en donde logre la integracion de los mismos, la resolucion de problemas y la creacion de proyectos. Me considero una persona responsable, con una gran capacidad de trabajo y una gran capacidad de adaptacion. Soy una persona que siempre esta dispuesta a aprender y me gusta mucho la tecnologia, me gusta mucho el desarrollo del software y la creacion de proyectos.",
+        "cv":"Descarga mi CV",
+        "TAS":"Fui teacher assistant a nivel de todo latinoamerica de un grupo de 21 engineer software en donde logramos la integracion de los profesionales y la resolucion de problemas de algoritmos y programacion. Promoviendo el pair programming y el trabajo en equipo. Logrando que cada uno de los integrantes consiga su maximo potencial y esten preparados para trabajar en cualquier equipo destacandose tanto en lo tecnico como en lo humano.",
+        "ni":"Mi nivel de programacion con react.js en frontend es de senior, mi experiencia rindiendo checkpoints para un trabajo a nivel mundial arrojo un resultado de un 80%.",
+        "diplo":"Certificado FullStack developer web",
+        "henry":"Con mas de 800 horas de codeo, pair programming y realizacion de proyectos tanto individuales como grupales en el frontend, backend y fullstack.",
+        "celu":"Certificado desarrollador de aplicaciones mobiles",
+        "cel":"Estudie el desarrollo de aplicaciones mobile, tanto el proceso, el diseño y la arquitectura.",
+        "habi":"Certificado de habilidades blandas en entornos digitales",
+        "habi2":"Complete el taller de habilidades blandas y trabajo remoto en entornos digitales.",
+        "exp":"Certificado de experiencia",
+        "expt":"Se desarrolla un proyecto en equipo en 4 semanas, cumpliendo requisitos de aprobación , asistiendo a reuniones con sus Team Leaders quienes evaluarán el desempeño del equipo. Las reuniones son diarias, utilizando metodologías agiles. Uso de herramientas como Trello, Jira y repositorios en GitHub.",
+        "msg":"Enviame un mensaje",
+        "place":"Escribe tu nombre",
+        "holder":"Escribe tu email",
+        "place2":"Asunto a tratar",
+        "holder2":"Escribe tu mensaje",
+        "mssg":"Tu mensaje fue enviado con exito",
+        "visit":"Visita mi Linkedin en",
+        "and":"y mi GitHub",
+        "thank":"Gracias por tu visita"
+
+    }
+  
+  }

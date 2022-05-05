@@ -1,12 +1,13 @@
 import React from 'react'
 import {  Card,  CardContent, CardMedia, makeStyles, Typography } from "@material-ui/core";
 
-import TypeWriterEffect from "react-typewriter-effect"
+import { useTranslation} from "react-i18next";
 import experiencia from "../images/experiencia.jpg"
 
  
 const Experiencia = ({title, dark, id}) => {
   const Classes = useStyles();
+  const [t, i18n] = useTranslation('global');
   return (
    
     <div className={`${Classes.section} ${dark && Classes.sectiondark}`}>
@@ -15,22 +16,9 @@ const Experiencia = ({title, dark, id}) => {
          <Card className={Classes.card}>
             <CardMedia  image={experiencia} className={Classes.media} title="picture"/>
             <CardContent className={Classes.CardContent}content>
-              <TypeWriterEffect
-                text= "Certificado de experiencia"
-                textStyle={{fontSize:"1.5rem", fontWeight: "1000px", color: "#51d1f6"}}
-                startDelay={100}
-                cursorColor= "black"
-                typeSpeed={100}
-
-               />
+            <h5>{t("About.exp")}</h5> 
          
-            <Typography variant="h7" color= "textSecondary"  textStyle={{fontSize:"0.1rem"}}>
-            Se desarrolla un proyecto en equipo en 4 semanas, cumpliendo requisitos de aprobación
-            , asistiendo a reuniones con sus Team Leaders quienes evaluarán el desempeño del equipo.
-            Las reuniones son diarias, utilizando metodologías agiles. 
-            Uso de herramientas como Trello, Jira y repositorios en GitHub.
-            </Typography>
-       
+           <h7>{t("About.expt")}</h7>
 
 
 

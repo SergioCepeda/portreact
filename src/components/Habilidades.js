@@ -1,12 +1,14 @@
 import React from 'react'
 import {  Card,  CardContent, CardMedia, makeStyles, Typography } from "@material-ui/core";
+import { useTranslation} from "react-i18next";
 
-import TypeWriterEffect from "react-typewriter-effect"
 import habilidades from "../images/habilidades.jpg"
+
 
  
 const Habilidades = ({title, dark, id}) => {
   const Classes = useStyles();
+  const [t, i18n] = useTranslation('global');
   return (
    
     <div className={`${Classes.section} ${dark && Classes.sectiondark}`}>
@@ -15,25 +17,9 @@ const Habilidades = ({title, dark, id}) => {
          <Card className={Classes.card}>
             <CardMedia  image={habilidades} className={Classes.media} title="picture"/>
             <CardContent className={Classes.CardContent}content>
-              <TypeWriterEffect
-                text= "Certificado de habilidades blandas en entornos digitales "
-                textStyle={{fontSize:"1.5rem", fontWeight: "1000px", color: "#51d1f6"}}
-                startDelay={100}
-                cursorColor= "black"
-                typeSpeed={100}
+            <h5>{t("About.habi")}</h5>          
 
-               />
-          
-
-            <Typography variant="h7" color= "textSecondary"  textStyle={{fontSize:"0.1rem"}}>
-            Reconocer la importancia de las habilidades blandas en entornos digitales en el presente
-             y futuro del trabajo. Entrenar la comunicación como herramienta esencial en cualquier
-              espacio de trabajo. Desarrollar la creatividad como habilidad fundamental tanto para 
-              la cotidianeidad como para utilizar en el trabajo. Conocer el valor de la habilidad
-               del trabajo en equipo para el mundo del trabajo. Identificar la agilidad como
-              modalidad de trabajo.
-            </Typography>
-       
+            <h7>{t("About.habi2")}</h7>
 
 
 

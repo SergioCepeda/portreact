@@ -1,0 +1,45 @@
+
+
+{
+  
+    "About":{
+      "name":"About me",
+      "skill":"Skills",
+      "work" :"My work",
+      "ta":"TA",
+      "level":"Level",
+      "stack":"FullStack",
+      "mobile":"Mobile",
+      "Habilidades":"soft skills",
+      "experiencia":"experience",
+      "contactame":"Contact me",
+      "Text": "Hello, Im Sergio",
+      "title":"Im engineer software ",
+      "p": "I am a graduate of Henry's bootcamp and a computer engineering student, I am passionate about what I do. I have experience with stack MERN AND PERN, I have experience as a freelancer for more than two and a half years, also developing team projects, as well as individually dealing directly with the client. I was TA of a group of 21 professionals, where I achieved their integration, problem solving and project creation. I consider myself a responsible person, with a great capacity for work and a great capacity for adaptation. I am a person who is always willing to learn and I really like technology, I really like software development and project creation.",
+      "cv":"Download CV",
+      "TAS":"I was a teacher assistant throughout Latin America for a group of 21 software engineers where we achieved the integration of professionals and the resolution of algorithm and programming problems. Promoting pair programming and teamwork. Ensuring that each of the members achieve their maximum potential and are prepared to work in any team, standing out both technically and humanly.",
+      "ni":"My level of programming with react.js in frontend is senior, my experience giving checkpoints for a job worldwide showed a result of 80%.",
+      "diplo":"Certified FullStack web developer",
+      "henry":"With more than 800 hours of coding, pair programming and realization of both individual and group projects in the frontend, backend and fullstack",
+      "celu":"Mobile app developer certificate",
+      "cel":"Study the development of mobile applications, both the process, the design and the architecture.",
+      "habi":"Certificate of soft skills in digital environments",
+      "habi2": "Complete the workshop on soft skills and remote work in digital environments.",
+      "exp":"Certificate of experience",
+      "expt":"A team project is developed in 4 weeks, meeting approval requirements, attending meetings with their Team Leaders who will evaluate the team's performance. The meetings are daily, using agile methodologies. Use of tools such as Trello, Jira and GitHub repositories",
+      "msg":"Send me a message",
+      "place":"Write your name",
+      "holder":"Write your email",
+      "place2":"Matter to be discussed",
+      "holder2":"Write your message",
+      "mssg":"Your message was sent successfully" ,
+      "visit":"Visit my linkedin at",
+      "and":"and mi GitHub",
+      "thank":"Thank you for your visit"
+      
+      
+ 
+
+  }
+
+}

@@ -1,42 +1,43 @@
 import React from 'react'
 import { Button, Card, CardActions, CardContent, CardMedia, makeStyles, Typography } from "@material-ui/core";
 import Sergio from "../images/Sergio.jpg";
-import TypeWriterEffect from "react-typewriter-effect"
-import pdf from "../images/CV.pdf.pdf"
+import spain from "../images/spain.png";
+import eeuu from "../images/eeuu.png";
+
+import pdf from "../images/CV.pdf.pdf";
+import { useTranslation} from "react-i18next";
 
  
 const About = ({title, dark, id}) => {
+  const [t, i18n] = useTranslation('global');
   const Classes = useStyles();
   return (
-   
+    <>
     <div className={`${Classes.section} ${dark && Classes.sectiondark}`}>
+        
+            <div class="row">
+            <div class="col-4">
+            <button  type="button" class="btn btn-warning float-left"  onClick={()=> i18n.changeLanguage("es")}><img src={spain} alt="no fount"/></button>
+               <button type="button"  class="btn btn-primary float-left" onClick={()=> i18n.changeLanguage("en")}><img src={eeuu} alt="no fount"/></button>
+               </div>
+               </div>
+           
+      
        <div className={ Classes.sectioncontext} id={id}>
          <Typography variant='h5'>{title}</Typography>
          <Card className={Classes.card}>
             <CardMedia  image={Sergio} className={Classes.media} title="picture"/>
             <CardContent className={Classes.CardContent}content>
-              <TypeWriterEffect
-                text= "Hola, Soy Sergio"
-                textStyle={{fontSize:"1.5rem", fontWeight: "1000px", color: "#51d1f6"}}
-                startDelay={100}
-                cursorColor= "black"
-                typeSpeed={100}
-
-               />
-               <TypeWriterEffect
-                text= "Soy fullStack Developer"
-                textStyle={{fontSize:"1.5rem", fontWeight: "900px"}}
-                startDelay={3500}
-                cursorColor= "#296cbc"
-                typeSpeed={50}
-
-               />
+              <h1
+              
+               
+                >{t('About.Text')}
+                </h1>
+               <h2>{t('About.title')}</h2>
+            
 
             <Typography variant="h7" color= "textSecondary"  textStyle={{fontSize:"0.1rem"}}>
-              Soy egresado del bootcamp de Henry y estudiante de ingeniera en la computación, soy una persona apasionada por lo que hago. Tengo experiencia con stack MERN Y PERN,cuento con
-              experiencia como freelance de mas de dos años y medio tambien desarrollando  proyectos en equipo, como tambien de forma individual tratando directamente con el cliente. Fui TA de un grupo de 21 profesionales,
-              en donde logre la integracion de los mismos, la resolucion de problemas y la creacion de proyectos. Me considero una persona responsable, con una gran capacidad de trabajo y una gran capacidad de adaptacion. 
-              Soy una persona que siempre esta dispuesta a aprender y me gusta mucho la tecnologia, me gusta mucho el desarrollo del software y la creacion de proyectos.
+              {t('About.p')}
  
             </Typography>
        
@@ -50,7 +51,7 @@ const About = ({title, dark, id}) => {
             <CardActions>
              <Button variant="contained"  className={Classes.pdfbutton}>
              <a href={pdf} download>
-             Descarga mi CV
+            {t('About.cv')} 
              </a>
              </Button>
             </CardActions>
@@ -58,6 +59,7 @@ const About = ({title, dark, id}) => {
          </Card>
        </div>
     </div>
+    </>
   )
 }
 
