@@ -36,7 +36,7 @@ function App() {
       <Level title={t("About.level")} id="nivel" dark={true}/>
       <FullStack title={t("About.stack")} id="fullstack" dark={false} />
       <Mobile title={t("About.mobile")} id="mobile" dark={true}/>
-    <Habilidades  title={t("About.habilidades")} id="habilidades" dark={false}/>
+    <Habilidades  title={t("About.Habilidades")} id="habilidades" dark={false}/>
     <Experiencia  title={t("About.experiencia")} id="experiencia" dark={true}/>
     <Contact  title={t("About.contactame")} id= "contact"   dark={false}/> 
       
