@@ -84,7 +84,7 @@ const useStyles = makeStyles((theme) => ({
     position: "relative",
   },
   media : {
-    width: "1500px",
+    width: "500px",
     height:"auto",
     objectFit:"cover",
     borderRadius:"10px",
