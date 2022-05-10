@@ -2,7 +2,7 @@ import React from 'react'
 import {  Card,  CardContent, CardMedia, makeStyles, Typography } from "@material-ui/core";
 import { useTranslation} from "react-i18next";
 
-import senior from "../images/seniorReact.png"
+import SrReact from "../images/SrReact.jpg"
 
  
 const Level = ({title, dark, id}) => {
@@ -14,7 +14,7 @@ const Level = ({title, dark, id}) => {
        <div className={ Classes.sectioncontext} id={id}>
          <Typography variant='h5'>{title}</Typography>
          <Card className={Classes.card}>
-            <CardMedia  image={senior} className={Classes.media} title="picture"/>
+            <CardMedia  image={SrReact} className={Classes.media} title="picture"/>
             <CardContent className={Classes.CardContent}content>
               <h3>{t("About.level")}</h3>
              

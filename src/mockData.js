@@ -8,6 +8,7 @@ import useStory from "./images/useStory.jpg";
 import spoty from "./images/spoty.jpg";
 import eco from "./images/e-co.jpg";
 import Bank from "./images/BanK.jpg";
+import SrReact from "./images/SrReact.jpg";
 
 
 const mockData = [
@@ -71,7 +72,14 @@ const mockData = [
         image:Bank, 
         link:"https://www.youtube.com/watch?v=RXYqR5k4AeY&t=1s"
 
-     }
+     },
+        {
+            title: "CheckPoint SrReact",
+            image:SrReact,
+            link:"https://www.youtube.com/watch?v=3xHjroVaY4g&t=6s",
+            
+        }
+
 
 
 ];
