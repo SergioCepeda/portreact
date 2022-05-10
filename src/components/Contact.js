@@ -72,6 +72,7 @@ const Contact = ({title, dark, id}) => {
 
   return (
    <>
+   <div className={`${Classes.section} ${dark && Classes.sectiondark}`}>
     <div class="col-12 my-5">  
   
        <div class="mx-auto" style={{width: "220px", top:"50px"}} id={id} >
@@ -144,7 +145,9 @@ const Contact = ({title, dark, id}) => {
         </div>
        
        </div>
+       </div>
         <Footer/>
+
        </>
      
   )
@@ -152,7 +155,7 @@ const Contact = ({title, dark, id}) => {
 
 const useStyles = makeStyles((theme) => ({
   section: {
-    minHeight: "100vh",
+    minHeight: "80vh",
     display:"flex",
     flexDirection:"column",
     justifyContent:"cemter",

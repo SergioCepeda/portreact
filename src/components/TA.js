@@ -43,11 +43,11 @@ const useStyles = makeStyles((theme) => ({
       color: "#fff",
     },
     sectioncontext:{
-      maxWidth:"80vw",
+      maxWidth:"60vw",
       margin: "0 auto",
     },
     card:{
-      height: "40vh",
+      height: "20vh",
       display:"flex",
       marginTop: theme.spacing(2),
       position: "relative",

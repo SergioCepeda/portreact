@@ -51,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
     margin: "0 auto",
   },
   card:{
-    height: "70vh",
+    height: "90vh",
     display:"flex",
     marginTop: theme.spacing(2),
     position: "relative",
