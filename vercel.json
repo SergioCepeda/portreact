@@ -1,8 +1,0 @@
-{
-    "version": 2,
-    "builds": [
-      { "src": "https://github.com/SergioCepeda/portfolio", "use": "@vercel/node" }
-    ],
-    "routes": [],
-    "env": {}
-  }
