@@ -1,6 +1,14 @@
 {
-    "engines": {
-      "node": "20.x"
-    }
+    "version": 2,
+    "builds": [
+      { "src": "https://github.com/SergioCepeda/portfolio ", "use": "@vercel/node", "config": { "NODE_VERSION": "20.x" } }
+    ],
+    "routes": [],
+    "env": {},
+    "functions": {},
+    "alias": {},
+    "public": {},
+    "env": {},
+    "edge": {}
   }
   
