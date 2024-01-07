@@ -4,7 +4,7 @@ import Sergio from "../images/Sergio.jpg";
 import spain from "../images/spain.png";
 import eeuu from "../images/eeuu.png";
 
-import pdf from "../images/CV.pdf.pdf";
+import pdf from "../images/curriculum.pdf";
 import { useTranslation} from "react-i18next";
 
  
