@@ -4,16 +4,18 @@ import {  Card,  CardContent, CardMedia, makeStyles, Typography } from "@materia
 import { useTranslation} from "react-i18next";
 import experiencia from "../images/experiencia.jpg"
 
+
  
 const Experiencia = ({title, dark, id}) => {
   const Classes = useStyles();
   const [t, i18n] = useTranslation('global');
   return (
+
    
-    <div className={`${Classes.section} ${dark && Classes.sectiondark}`}>
+    <div className={`${Classes.section} ${dark && Classes.sectiondark}`}>      
        <div className={ Classes.sectioncontext} id={id}>
          <Typography variant='h5'>{title}</Typography>
-         <Card className={Classes.card}>
+         <Card className={Classes.card}>          
             <CardMedia  image={experiencia} className={Classes.media} title="picture"/>
             <CardContent className={Classes.CardContent}content>
             <h5>{t("About.exp")}</h5> 
