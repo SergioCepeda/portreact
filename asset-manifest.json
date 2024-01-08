@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/portreact/static/css/main.021bf44e.css",
+    "main.js": "/portreact/static/js/main.cfcf83ed.js",
+    "static/media/Sergio.jpg": "/portreact/static/media/Sergio.d3dd6bfaafce182fe20a.jpg",
+    "static/media/equipo.png": "/portreact/static/media/equipo.daba94db90fd635de28b.png",
+    "static/media/express.png": "/portreact/static/media/express.5578b38588e39d0815ba.png",
+    "static/media/TAS.png": "/portreact/static/media/TAS.30c291c882eb410d12da.png",
+    "static/media/useStory.jpg": "/portreact/static/media/useStory.2f79145b51259461b2ae.jpg",
+    "static/media/e-co.jpg": "/portreact/static/media/e-co.2a2797f95fd80f5ef4ad.jpg",
+    "static/media/ultimo.jpg": "/portreact/static/media/ultimo.046923551fcdd2720fce.jpg",
+    "static/media/pelic.jpg": "/portreact/static/media/pelic.0392f352a9627274d135.jpg",
+    "static/media/rapiResto.jpg": "/portreact/static/media/rapiResto.1aac6b78c49ccd8f8e95.jpg",
+    "static/media/spoty.jpg": "/portreact/static/media/spoty.58c222522047066a131b.jpg",
+    "static/media/piHenry.jpg": "/portreact/static/media/piHenry.fa3d84d7f47fd061c371.jpg",
+    "static/media/BanK.jpg": "/portreact/static/media/BanK.933841eebbdf68728995.jpg",
+    "static/media/breakingbad.jpg": "/portreact/static/media/breakingbad.2f3c12e7769d360064ea.jpg",
+    "static/media/clonGoogle.jpg": "/portreact/static/media/clonGoogle.cdca1f8db25c7f4c1ecc.jpg",
+    "static/media/Ta.jpg": "/portreact/static/media/Ta.700c4a6f547e31e9a404.jpg",
+    "static/media/Clima.jpg": "/portreact/static/media/Clima.ca0ad5ac5d1f00600356.jpg",
+    "static/media/react-redux.png": "/portreact/static/media/react-redux.03f3222b849806e9964a.png",
+    "static/media/react.png": "/portreact/static/media/react.a544fd8cf64d82898e91.png",
+    "static/media/SrReact.jpg": "/portreact/static/media/SrReact.cbd121a60fb65c31fac4.jpg",
+    "static/media/habilidades.jpg": "/portreact/static/media/habilidades.8397046de28f0808e2c4.jpg",
+    "static/media/postgre.jpg": "/portreact/static/media/postgre.2b77991fe8434f241587.jpg",
+    "static/media/curriculum.pdf": "/portreact/static/media/curriculum.5c21a9c905569cb93777.pdf",
+    "static/media/certificadoFullStack.jpg": "/portreact/static/media/certificadoFullStack.af715ba2f60101d27ee9.jpg",
+    "static/media/logoMongo.jpg": "/portreact/static/media/logoMongo.b52e31e00feffc2fc3f9.jpg",
+    "static/media/css.webp": "/portreact/static/media/css.0c2690a25c4bec03822a.webp",
+    "static/media/mobile.jpg": "/portreact/static/media/mobile.88d5579ea4c8ebf82796.jpg",
+    "static/media/html.png": "/portreact/static/media/html.23784160d848f734c302.png",
+    "static/media/JS.png": "/portreact/static/media/JS.1fd44cea9d9bd9ee2944.png",
+    "static/media/experiencia.jpg": "/portreact/static/media/experiencia.0cb8effc248b42415f75.jpg",
+    "static/media/myAvatar.png": "/portreact/static/media/myAvatar.610268b2c92e490f782d.png",
+    "index.html": "/portreact/index.html",
+    "main.021bf44e.css.map": "/portreact/static/css/main.021bf44e.css.map",
+    "main.cfcf83ed.js.map": "/portreact/static/js/main.cfcf83ed.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.021bf44e.css",
+    "static/js/main.cfcf83ed.js"
+  ]
+}
